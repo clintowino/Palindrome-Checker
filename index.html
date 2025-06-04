@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        #input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #218838;
+            
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin: 0;
+        }
+        footer {
+            
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+           
+            color: #6c757d;
+            margin-top: 100px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+            
+        }
+
+        /* Responsive styles for small screens */
+        @media (max-width: 600px) {
+            body {
+                min-height: 100vh;
+                padding: 24px 8px 60px 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                background: #f0f0f0;
+            }
+            h1 {
+                font-size: 28px !important;
+                margin-top: 24px !important;
+                text-align: center !important;
+            }
+            #input {
+                width: 100%;
+                max-width: 350px;
+                min-width: 0;
+                font-size: 15px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                padding: 12px 10px;
+            }
+            button {
+                width: 100%;
+                max-width: 350px;
+                font-size: 15px;
+                padding: 12px 0;
+                margin: 20px auto 0 auto;
+                box-sizing: border-box;
+            }
+            p {
+                font-size: 15px;
+                margin: 12px 0;
+                text-align: center;
+                word-break: break-word;
+                line-height: 1.5;
+                padding: 0 2vw;
+                max-width: 100vw;
+            }
+            footer {
+                margin-top: 24px;
+                font-size: 14px;
+                padding: 8px 0;
+                width: 100vw;
+                left: 0;
+                position: static;
+                background: #f0f0f0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial, sans-serif; text-align: center;">
+    <h1 style="text-align: center; margin-top:150px;font-size: 40px" >Palindrome Checker</h1>
+    <p> A Palindrome Checker is a program that checks if a given string is a palindrome or not.<br> A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward<br> (ignoring spaces, punctuation, and capitalization). Examples include "racecar", "madam", and
+    </p>
+    <input type="text" id="input" placeholder="Enter text to check"/>
+    <button onclick="check()">Check</button>
+
+
+    <script src="index.js"></script>
+
+    <footer>
+        2023 © Clinton Owino. All rights reserved.
+    </footer>
+</body>
+</html>
