@@ -11,9 +11,10 @@ function check(){
         alert('Please enter a word or phrase.');
         return;
     }
-    const reverse = reverseString(value);
+    const lower = value.toLowerCase();
+    const reverse = reverseString(lower);
 
-    if (value === reverse) {
+    if (lower === reverse) {
         alert(' This is a P A L I N D R O M E')
     } else {
         alert('Not a Palindrome!')
